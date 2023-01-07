@@ -34,14 +34,8 @@ biases=np.random.rand(3,1)#initialising the biases array
 #Applying stochaistic gradient descent to the machine learning model in order to calculate weights and biases the predict more accuratley
 updatedWeights, updatedBiases=stochaisticGradientDescent(0.001, 10, vectorTrainingTarget, trainingFeatures, weights, biases)
 
-
 seasonData=pd.read_excel('2021Data.xlsx')#Reading all the features from the excel file
 seasonData=np.array(seasonData, dtype=str)#Assinging the features arrray to hold integers
-
-
-
-
-
 
 
 window=tk.Tk() 
